@@ -8,5 +8,10 @@ then
 	echo "export PATH=\$PATH:\$PSPDEV/bin" >> /etc/profile.d/psptoolchain.sh
 	echo "$PSPDEV/bin added to your systems login scripts!"
 else
-	echo "Remember to add $PSPDEV/bin to your path..."
+	echo "--------------------------------------"
+	echo "Remember to add these two lines to your local .profile:"
+	echo ""
+	echo "export PSPDEV=$PSPDEV"
+	echo "export PATH=\$PATH:\$PSPDEV/bin"
+	echo "--------------------------------------"
 fi
